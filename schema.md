@@ -24,3 +24,15 @@ plats ? Donnez un exemple de problème concret.
 
   car Si on décide de modifier le nom d'une catégorie, on doit mettre à jour tous les enregistrements dans la table des plats.
   par exemple, si on change le nom de la catégorie "plat malagasy" en "soupe", il faudrait mettre à jour tous les plats qui appartiennent à cette catégorie.
+
+## 3 – Les commandes
+
+ travail:
+
+  commandes(**id** , date_commande);
+
+  plats_commandes(**commande_id**, **plat_id**, quantite);
+
+piege:Où placez-vous la quantité ?
+
+    dans la table plats_commandes, car c'est une information qui dépend de la commande et du plat.

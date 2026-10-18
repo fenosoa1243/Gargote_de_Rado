@@ -1,5 +1,5 @@
 --1
- CREATE DATABASE gargote;
+ CREATE DATABASE gargote_rado;
 
 CREATE TABLE plats (
     id SERIAL PRIMARY KEY,

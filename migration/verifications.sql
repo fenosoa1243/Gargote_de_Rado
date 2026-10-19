@@ -17,3 +17,7 @@ select c.id, SUM(p.prix * cp.quantite) as montant_total from commande_plats as c
  join commandes as c on cp.commande_id = c.id
 group by c.id;
 
+-- Etape 4 : liste des commandes avec le nom du client, en affichant « client de passage » quand il n'y en a pas.
+select c.id, c.date_commande, COALESCE(cl.nom, 'client de passage') as nom_client
+from commandes c
+left join clients cl on c.client_id = cl.id;

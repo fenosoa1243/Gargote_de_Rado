@@ -27,3 +27,5 @@ Insert into commande_plats (commande_id, plat_id, quantite) values
 select cp.*,p.nom,c.date_commande from commande_plats as cp
 inner join plats as p on cp.plat_id = p.id
 inner join commandes as c on cp.commande_id = c.id;
+
+Insert into commandes (date_commande) values ('2025-01-10');

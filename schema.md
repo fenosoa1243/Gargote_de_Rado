@@ -35,4 +35,11 @@ plats ? Donnez un exemple de problème concret.
 
 piege:Où placez-vous la quantité ?
 
-    dans la table plats_commandes, car c'est une information qui dépend de la commande et du plat.
+  dans la table plats_commandes, car c'est une information qui dépend de la commande et du plat.
+
+## 4 – Les  habitués
+
+ travail:
+
+  clients(**id** , nom, prenom, email);
+  commandes(**id** , date_commande,#client_id);
